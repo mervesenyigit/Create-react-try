@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import Card from './Card';
+import Button from '././Button';
 
 function ToDoItem() {
      
@@ -17,23 +18,30 @@ function ToDoItem() {
   const deleteTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));
   };
-
+  const onComplete = (index) => {
+    const updatedTasks = tasks.map((task, i) =>
+      i === index ? { ...task, completed: true } : task
+    );
+    setTasks(updatedTasks);
+  };
     
   return (
-    <div>
-      <div>
+    <div className='todoBody'> 
+      <div className='todo-layout'>
         <p></p>
       <input  
-          className="" 
+          className="todoItem" 
           onChange={(e) => setNewTask(e.target.value)}
+         
           type="type" 
           placeholder='Seach todos' 
          value={newTask}
        />
-      </div>
-      <button onClick={addTask}>
+         <Button onClick={addTask}  >
         Ekle
-      </button>
+      </Button>
+      </div>
+    
       <div className='todoContent'>
    {
      tasks
@@ -43,6 +51,7 @@ function ToDoItem() {
          key={index}
          task={task}
          onDelete={() => deleteTask(index)}
+         onComplete={() => onComplete(index)}
        />
      ))}
       </div>

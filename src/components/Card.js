@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Card = ({ task, onDelete, onComplete }) => {
+
     return (
-      <div className={`card-content ${task.completed ? 'completed' : ''}`}>
+        <>
+        <div className={`card-content ${task.completed ? 'completed' : ''}`}>
         <div className="card-content">
         {task.completed && (
           <span className="check-icon">✔</span>
@@ -13,7 +15,7 @@ const Card = ({ task, onDelete, onComplete }) => {
           <button
             className="complete-button"
             onClick={onComplete}
-            disabled={task.completed}
+          
           >
             {task.completed ? 'Tamamlandı' : 'Tamamla'}
           </button>
@@ -24,6 +26,8 @@ const Card = ({ task, onDelete, onComplete }) => {
         </div>
        
       </div>
+        </>
+      
     );
   };
 export default Card
