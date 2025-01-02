@@ -53,3 +53,22 @@ h1, p {
     transform: rotate(360deg);
   }
 }
+
+.inputContent{
+  padding: 12px 2px;
+  border: 1px solid gray;
+  border-radius: 2em;
+  text-align: center;
+}
+.inputResultContent
+{
+  display: grid;
+
+}
+.buttonContent {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  gap: 10px;
+  margin-top: 2em;
+}
