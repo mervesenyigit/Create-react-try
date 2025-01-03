@@ -6,12 +6,14 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Calculator from './components/Calculator';
 import ToDoItem from './components/ToDoItem';
+import BasicNotebook from './components/BasicNotebook';
 
 function App() {
   return (
     <div className="App">
+       <BasicNotebook />
       <header className="App-header">
-        <nav>
+        {/* <nav>
           <ul className='nav-ul'>
             <li>
               <Link to="/">Home</Link>
@@ -22,8 +24,9 @@ function App() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            
           </ul>
-        </nav>
+        </nav> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,6 +34,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/todoitem" element={<ToDoItem />} />
+          <Route path="/basicnotebook" element={<BasicNotebook />} />
+        
         </Routes>
       </header>
     </div>
