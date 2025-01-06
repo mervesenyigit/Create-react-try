@@ -8,12 +8,16 @@ import Calculator from './components/Calculator';
 import ToDoItem from './components/ToDoItem';
 import BasicNotebook from './components/BasicNotebook';
 import UseStateTryComponent from './components/useStateTryComponent';
+import FavoriteBookList from './components/FavoriteBookList';
+
 
 function App() {
   return (
     <div className="App">
        <BasicNotebook />
        <UseStateTryComponent/>
+       <FavoriteBookList />
+    
       <header className="App-header">
         {/* <nav>
           <ul className='nav-ul'>
