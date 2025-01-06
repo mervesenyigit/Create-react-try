@@ -7,11 +7,13 @@ import Contact from './components/Contact';
 import Calculator from './components/Calculator';
 import ToDoItem from './components/ToDoItem';
 import BasicNotebook from './components/BasicNotebook';
+import UseStateTryComponent from './components/useStateTryComponent';
 
 function App() {
   return (
     <div className="App">
        <BasicNotebook />
+       <UseStateTryComponent/>
       <header className="App-header">
         {/* <nav>
           <ul className='nav-ul'>
