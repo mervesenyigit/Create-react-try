@@ -9,6 +9,7 @@ import ToDoItem from './components/ToDoItem';
 import BasicNotebook from './components/BasicNotebook';
 import UseStateTryComponent from './components/useStateTryComponent';
 import FavoriteBookList from './components/FavoriteBookList';
+import BMICalcuator from './components/BMICalcuator';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
        <BasicNotebook />
        <UseStateTryComponent/>
        <FavoriteBookList />
+       <BMICalcuator/>
     
       <header className="App-header">
         {/* <nav>
