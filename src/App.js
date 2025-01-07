@@ -10,6 +10,9 @@ import BasicNotebook from './components/BasicNotebook';
 import UseStateTryComponent from './components/useStateTryComponent';
 import FavoriteBookList from './components/FavoriteBookList';
 import BMICalcuator from './components/BMICalcuator';
+import UserFetcher from './components/UserFetcher ';
+
+
 
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
        <UseStateTryComponent/>
        <FavoriteBookList />
        <BMICalcuator/>
+       <UserFetcher/>
     
       <header className="App-header">
         {/* <nav>

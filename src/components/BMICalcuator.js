@@ -7,12 +7,14 @@ function BMICalcuator() {
     const [bmi, setBMI] = useState(null);
 
     const[status,setStatus]=useState("");
+
     function calculateBMI(e){
         e.preventDefault();
+        
         const heightInMeters = height / 100;
         const calculatedBMI = weight / (heightInMeters * heightInMeters);
         setBMI(calculatedBMI.toFixed(2)); 
-        
+
         if (calculatedBMI < 18.5) {
             setStatus("Underweight");
         } else if (calculatedBMI >= 18.5 && calculatedBMI < 24.9) {
@@ -21,7 +23,7 @@ function BMICalcuator() {
             setStatus("Overweight");
         } else {
             setStatus("Obesity");
-        }
+        }   
       setHeight("");
       setWeight("");
 
