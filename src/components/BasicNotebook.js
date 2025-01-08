@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react'
 // import Card from './Card';
-import Button from '././Button';
 
+import Button from '././Button';
 function BasicNotebook() {
     const[notes, setNotes]=useState(() =>{
         

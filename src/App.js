@@ -11,6 +11,8 @@ import UseStateTryComponent from './components/useStateTryComponent';
 import FavoriteBookList from './components/FavoriteBookList';
 import BMICalcuator from './components/BMICalcuator';
 import UserFetcher from './components/UserFetcher ';
+import UseReducerExample from './components/UseReducerExample';
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
        <FavoriteBookList />
        <BMICalcuator/>
        <UserFetcher/>
+       <UseReducerExample/>
     
       <header className="App-header">
         {/* <nav>
